@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AutomaTech</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: #020617;
+      position: sticky;
+      top: 0;
+    }
+
+    header h1 {
+      color: #38bdf8;
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #cbd5f5;
+      font-size: 0.9rem;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      padding: 100px 10%;
+      text-align: center;
+      background: linear-gradient(135deg, #020617, #0f172a);
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 30px;
+      color: #94a3b8;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #38bdf8;
+      color: #020617;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .features, .team, .projects {
+      display: grid;
+      gap: 30px;
+    }
+
+    .features {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .card {
+      background: #020617;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .team {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .team img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .projects {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .video {
+      width: 100%;
+      height: 150px;
+      background: #1e293b;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 10%;
+      background: #020617;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>AutomaTech</h1>
+  <nav>
+    <a href="#sobre">Quem somos</a>
+    <a href="#equipe">Equipe</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Automatize processos. Ganhe tempo. Produza mais.</h2>
+  <p>
+    Desenvolvemos soluções inteligentes para transformar tarefas manuais em processos automatizados, reduzindo erros e aumentando a eficiência.
+  </p>
+  <p>
+    Trabalhamos com tecnologias modernas de automação e inteligência artificial, utilizando ferramentas avançadas para entregar soluções eficientes e escaláveis.
+  </p>
+  <p>
+    Traga sua ideia. Nós transformamos em solução.
+  </p>
+  <a href="#contato" class="btn">Fale conosco</a>
+</section>
+
+<!-- criar uma seção que explore os tópicos comercial, financeiro, operacional(?meio genérico?)-->
+ <section>
+  <h3>Onde podemos ajudar seu negócio</h3>
+  <p>
+    Automatizamos processos em diferentes áreas, reduzindo tarefas manuais e aumentando a produtividade.
+  </p>
+
+  <div class="features">
+
+    <div class="card">
+      <div class="card">
+        <h4>📈 Comercial</h4>
+        <p>
+          Geração de leads, automação de atendimento, envio de mensagens e organização de contatos.
+        </p>
+        <video autoplay muted loop playsinline class="card-video">
+          <source src="videos/comercial.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="card">
+        <h4>💰 Financeiro</h4>
+        <p>
+          Organização de operações financeiras, geração de relatórios e conferência de dados.
+        </p>
+        <video autoplay muted loop playsinline class="card-video">
+          <source src="videos/financeiro.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="card">
+        <h4>⚙️ Operacional</h4>
+        <p>
+          Automação de tarefas repetitivas, integração entre sistemas e otimização de processos internos.
+        </p>
+        <video autoplay muted loop playsinline class="card-video">
+          <source src="videos/operacional.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="card">
+        <h4>🧩 Sob medida</h4>
+        <p>
+          Desenvolvemos soluções personalizadas de acordo com a necessidade do seu negócio.
+        </p>
+        <video autoplay muted loop playsinline class="card-video">
+          <source src="videos/custom.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+  </div>
+
+  <br><br>
+  <a href="#contato" class="btn">Quero automatizar meu processo</a>
+</section>
+
+<section>
+  <h3>Como podemos te ajudar</h3>
+  <div class="features">
+    <div class="card">Automação de tarefas repetitivas</div>
+    <div class="card">Sistemas personalizados</div>
+    <div class="card">Integração entre plataformas</div>
+    <div class="card">Otimização de processos</div>
+  </div>
+</section>
+
+<section id="sobre">
+  <h3>Quem somos</h3>
+  <p>
+    Somos uma equipe de 4 desenvolvedores em formação pela Fatec Americana, com foco em criar soluções práticas e eficientes.
+  </p>
+  <p>
+    Além da graduação, temos formação técnica em desenvolvimento de sistemas, eletroeletrônica e marketing, o que nos permite enxergar problemas de forma completa e propor soluções reais.
+  </p>
+  <br>
+  <a href="#equipe" class="btn">Conheça a equipe</a>
+</section>
+
+<section id="equipe">
+  <h3>Equipe</h3>
+  <div class="team">
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="">
+      <h4>Dev 1</h4>
+      <p>Foco em backend e automação</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="">
+      <h4>Dev 2</h4>
+      <p>Desenvolvimento full stack</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="">
+      <h4>Dev 3</h4>
+      <p>Interfaces e experiência do usuário</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="">
+      <h4>Dev 4</h4>
+      <p>Integrações e soluções técnicas</p>
+    </div>
+  </div>
+</section>
+
+<section id="projetos">
+  <h3>Projetos</h3>
+  <p>Veja algumas soluções desenvolvidas por nossa equipe.</p>
+
+  <div class="projects">
+    <div class="card">
+      <div class="video"></div>
+      <p>Sistema de automação de processos</p>
+    </div>
+
+    <div class="card">
+      <div class="video"></div>
+      <p>Integração entre plataformas</p>
+    </div>
+  </div>
+
+  <br><br>
+  <a href="#contato" class="btn">Quero automatizar meu processo</a>
+</section>
+
+<section id="contato">
+  <h3>Contato</h3>
+  <p>Pronto para automatizar seus processos? Fale diretamente com nossa equipe.</p>
+  <br>
+  <a href="#" class="btn">WhatsApp</a>
+</section>
+
+<footer>
+  <p>© 2026 AutomaTech. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
